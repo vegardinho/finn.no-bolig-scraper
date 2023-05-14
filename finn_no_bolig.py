@@ -36,7 +36,7 @@ def get_attrs(aprt, aprt_dict, search):
     try:
         viewing = aprt.select('span.inline-block.px-8')[0].getText(strip=True)
     except Exception:
-        print(href)
+        print("Could not fetch viewing date: " + href)
     if not viewing == 'Visning etter avtale':
         return aprt_dict
 
