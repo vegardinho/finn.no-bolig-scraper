@@ -11,12 +11,12 @@ HISTORY_FILE = './in_out/finn_no.history'
 
 FINNNO_BASE_URL = 'https://www.finn.no/realestate/homes/search.html'
 PUSHOVER_TOKEN = 'aototezet9b6mea31ys6gh3a76so49'
-
+PUSHOVER_KEY = 'gacexcctna6ddmh4z8mt1f435ufjov'
 
 def main():
     scrape_site(get_elements, get_attrs, get_next_page, 'Finn.no (eiendom)', aprt_string_format,
                 pushover_token=PUSHOVER_TOKEN, history_file=HISTORY_FILE,
-                searches_file=SEARCH_URL_FILE, elmnts_out_file=APRTS_FILE)
+                searches_file=SEARCH_URL_FILE, elmnts_out_file=APRTS_FILE, pushover_key=PUSHOVER_KEY)
 
 
 def aprt_string_format(ad_link, search_link, ad_dict):
