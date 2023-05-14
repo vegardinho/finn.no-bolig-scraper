@@ -20,7 +20,7 @@ def main():
 
 
 def aprt_string_format(ad_link, search_link, ad_dict):
-    return f'{ad_link} \n{ad_dict["cost"]} kr / {ad_dict["total_cost"]} kr\n{ad_dict["misc_info"]}'
+    return f'{ad_link}\n{ad_dict["cost"]} kr / {ad_dict["total_cost"]} kr\n{ad_dict["misc_info"]} ∙ {ad_dict["size"]}'
 
 
 def get_elements(page):
